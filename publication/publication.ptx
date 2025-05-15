@@ -2,6 +2,10 @@
 <publication>
     <!-- directories are relative to the main source PreTeXt file -->
     <source>
-        <directories external="../assets" generated="../generated-assets"/>
+        <directories external="." generated="../generated-assets"/>
     </source>
+
+    <common>
+        <exercise-project statement="yes" hint="yes" answer="no" solution="no"/>
+    </common>
 </publication>
