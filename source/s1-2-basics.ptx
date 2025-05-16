@@ -206,8 +206,8 @@
         from different points of view from time to time. However, the quick review
         above should probably let you answer these questions. If you have difficulty
         with them, it would be a good idea to go now to <xref ref="Relations">Appendix</xref> and
-        work through <xref ref="relationsandfunctions">Section</xref> which covers this definition
-        in more detail. You might also want to study <xref ref="digraphsoffunctions" text="global">Section</xref> to learn
+        work through <xref ref="relationsandfunctions"/> which covers this definition
+        in more detail. You might also want to study <xref ref="digraphsoffunctions" text="title"/> to learn
         to visualize the properties of functions. We will take up the topic of
         this section later in this chapter as well, but in less detail than is
         in the appendix.
@@ -2374,7 +2374,9 @@ many ways can you pair up the next person who isn't already paired up?
       but thinking about it as a principle in its own right often leads us to find
       solutions to problems. Notice that it does not always give us a formula for
       the number of blocks of a partition; it only works when all the blocks have
-      the same size. In <xref ref="groupsonsets">Chapter</xref>, we develop a way to solve problems
+      the same size. 
+      <!-- In <xref ref="groupsonsets">Chapter</xref>, we develop a way -->
+      It is possible to solve problems
       with different block sizes in cases where there is a good deal of
       symmetry in the problem. (The roundness of the table was a symmetry in
       the problem of people at a table; the fact that we can order the sets
@@ -2493,8 +2495,8 @@ many ways can you pair up the next person who isn't already paired up?
     <activity xml:id="twocolorsofbeads" category="essential">
       <statement>
         <p>
-          (This becomes especially relevant in
-          <xref ref="groupsonsets" />, though it makes an important point here.) In how many ways may we attach two identical red beads
+          <!-- (This becomes especially relevant in
+          <xref ref="groupsonsets" />, though it makes an important point here.)--> In how many ways may we attach two identical red beads
           and two identical blue beads to the corners of a square (with one bead
           per corner) free
           to move around in (three-dimensional) space?
