@@ -4,6 +4,9 @@
   <title>Relations as sets of Ordered Pairs</title>
   <subsection xml:id="functionrelation">
     <title>The relation of a function</title>
+
+    <!-- Begin material copied/pasted into s1-2 -->
+    <!--
     <activity xml:id="functionsasorderedpairs">
       <statement>
         <p>
@@ -255,7 +258,9 @@
             not onto.
           </p>
         </solution>
-      </activity>
+      </activity> 
+    -->
+    <!-- End material copied/pasted into s1-2 -->  
   </subsection>
 
 
