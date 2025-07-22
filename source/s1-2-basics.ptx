@@ -194,9 +194,328 @@
         </p>
       </solution>
     </activity>
+  </introduction>
+
+  <subsection xml:id="subsec-setsfunctions">
+    <title>Review of sets and functions</title>
+    <activity xml:id="setsreview">
+      <introduction>
+        <p>
+          Use your memory or any other resources to complete the following review of basic notation from set theory.
+        </p>
+      </introduction>
+      <task>
+          <statement>
+            <p> Use set-builder notation to write down the set of all odd integers. </p>
+          </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Given sets <m>A</m> and <m>B</m>, write down the definitions of the sets <m>A\cap B</m> and <m>A\cup B</m>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Given sets <m>A</m> and <m>B</m>, explain how you prove that <m>A\subseteq B</m> and how you prove that <m>A = B</m>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            We use single vertical bars around a set to denote its <term>cardinality</term>, that is, the number of elements it contains.  We assume that for all sets <m>A</m> and <m>B</m>,
+            <ul>
+              <li>
+                <p>
+                  <m>|A| \geq 0</m>;
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>|A|=0</m> if and only if <m>A=\emptyset</m>;
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>A \cap B = \emptyset</m> implies <m>|A| + |B| = |A\cup B|</m>.
+                </p>
+              </li>
+            </ul> 
+            Prove that if <m>A\subsetneq B</m>, then <m>|A| &lt; |B|</m>.  Is the converse true?
+          </p>
+        </statement>
+      </task>
+    </activity>
+
+    <p>
+        The idea of a function is ubiquitous in mathematics. A
+        function<idx><h>function</h></idx> <m>f</m> from a set <m>S</m> to a set <m>T</m> is a relationship
+        between the two sets that associates exactly one member <m>f(x)</m>
+        of <m>T</m> with each element <m>x</m> in <m>S</m>.
+    </p>
+
+   <!-- Note:  Begin copy/paste of Appendix on Functions/Relations -->
+
+ <activity xml:id="functionsasorderedpairs">
+      <statement>
+        <p>
+          Consider the functions from <m>S=\{-2,-1,0,1,2\}</m> to
+          <m>T=\{1,2,3,4,5\}</m> defined by
+          <m>f(x) = x+3</m>, and <m>g(x) = x^5-5x^3+5x +3</m>. Write down the set
+          of ordered pairs <m>(x,f(x))</m> for <m>x \in S</m> and the set of
+          ordered pairs
+          <m>(x,g(x))</m> for <m>x \in S</m>. Are the two functions the same or
+          different?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We get <m>\{(-2,1),(-1,2),(0,3),(1,4),(2,5)\}</m> in both
+          cases, so the functions are the same.
+        </p>
+      </solution>
+    </activity>
+
+    <p>
+      <xref ref="functionsasorderedpairs">Problem</xref> points out how two functions
+      which appear to be different are actually the same on some
+      domain of interest to us. Most of the time when we are
+      thinking about functions it is fine to think of a function
+      casually as a relationship between two sets. In <xref ref="functionsasorderedpairs">Problem</xref> the set of ordered pairs you
+      wrote down for each function is called the <idx><h>relation</h><h>of a
+      function</h></idx><idx><h>function</h><h>relation of</h></idx><term>relation</term> of the function.
+      When we want to distinguish between the casual and the careful in
+      talking about relationships, our casual term will be <q>relationship</q>
+      and our careful term will be <q>relation.</q> So <em>relation</em>
+      is a technical word in mathematics, and as such it has
+      a technical definition. A <idx><h>relation</h></idx><term>relation</term> from a set
+      <m>S</m> to a set <m>T</m> is a set of ordered pairs whose first elements are in
+      <m>S</m> and whose second elements are in <m>T</m>. Another way to say this is
+      that a <term>relation</term> from <m>S</m> to <m>T</m> is a subset of <m>S\times T</m>.
+    </p>
+
+    <p>
+      A typical way to define a <term>function</term><idx><h>function</h></idx> <m>f</m> from a
+      set
+      <m>S</m>, called the <term>domain</term> of the function,
+      <idx><h>domain (of a function)</h></idx>
+      to a set
+      <m>T</m>, called the <term>codomain</term>,
+      <idx><h>codomain (of a function)</h></idx>
+      is that <m>f</m> is a relationship between <m>S</m> to <m>T</m> that relates one and only one member of <m>T</m> to each element of <m>X</m>. We use
+      <m>f(x)</m> to stand for the element of <m>T</m> that is related to the
+      element <m>x</m> of <m>S</m>. If we wanted to make our definition more
+      precise, we could substitute the word <q>relation</q> for the word
+      <q>relationship</q> and we would have a more precise definition. For
+      our purposes, you can choose whichever definition you prefer.
+      However, in any case, there is a relation associated with each
+      function. As we said above, the relation of a function <m>f:
+      S\rightarrow T</m> (which is the standard shorthand for <q><m>f</m> is a
+      function from <m>S</m> to <m>T</m></q> and is usually read as <m>f</m> <term>maps</term>
+      <m>S</m> to <m>T</m>) is the set of all ordered pairs
+      <m>(x,f(x))</m> such that <m>x</m> is in <m>S</m>.
+    </p>
+
+    <activity xml:id="formalrelations">
+      <introduction>
+      <p>
+      Here are some questions that will help you get used to
+      the formal idea of a relation and the related formal idea of a
+      function. <m>S</m> will stand for a set of size
+      <m>s</m> and
+      <m>T</m> will stand for a set of size <m>t</m>.
+      </p>
+    </introduction>
+      <task>
+        <statement>
+          <p>
+            What is the size of the largest relation from <m>S</m> to <m>T</m>?
+          </p>
+          </statement>
+        <solution>
+          <p>
+            <m>st</m> because that is the size of the relation that has
+            all the ordered pairs <m>(x,y)</m> with <m>x\in S</m> and <m>y\in T</m>.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What is the size of the smallest relation from <m>S</m> to
+            <m>T</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            0, because the empty set of ordered pairs is a
+            relation.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            The relation of a function <m>f:S\rightarrow T</m> is the set
+            of all ordered pairs <m>(x,f(x))</m> with <m>x\in S</m>.  What is the
+            size of the relation of a function from <m>S</m> to <m>T</m>?  That is, how many
+            ordered pairs are in the relation of a function from <m>S</m> to <m>T</m>?
+          </p>
+        </statement>
+        <hint>
+          <p>
+            In the relation of a function, how many pairs <m>(x, f (x))</m> have the same <m>x</m>-value?
+          </p>
+        </hint>
+        <solution>
+          <p>
+            The size of the relation of <m>f:S\rightarrow T</m> is <m>s</m>.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            We say <m>f</m> is a <term>one-to-one</term><idx><h>function</h><h>one-to-one</h></idx><idx><h>one-to-one
+            function</h></idx><idx><h>injection</h></idx> function or <term>injection</term> from
+            <m>S</m> to
+            <m>T</m> if each member of <m>S</m> is related to a <em>different</em> element
+            of <m>T</m>. How many different elements must appear as second elements
+            of the ordered pairs in the relation of a one-to-one function
+            (injection) from
+            <m>S</m> to
+            <m>T</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>s</m> different elements must appear, one for each element
+            of <m>S</m>.
+          </p>
+        </solution>
+      </task>
+      <task xml:id="onto" >
+        <statement>
+        <p>
+          A function <m>f:S\rightarrow T</m> is called an <idx><h>onto
+          function</h></idx><idx><h>function</h><h>onto</h></idx><term>onto function</term> or
+          <idx><h>surjection</h></idx><idx><h>function</h><h>surjection</h></idx><term>surjection</term> if each
+          element of
+          <m>T</m> is <m>f(x)</m> for some <m>x\in S</m>.  What is the minimum size that
+          <m>S</m> can have if there is a  surjection from
+          <m>S</m> to
+          <m>T</m>?
+        </p>
+        </statement>
+        <solution>
+          <p>
+            In order to have a surjection from <m>S</m> to <m>T</m>, the size
+            of <m>S</m> must be at least <m>t</m>.
+          </p>
+        </solution>
+      </task>
+    </activity>
+
+
+    <activity>
+      <introduction>
+        <p>
+           When <m>f</m> is a function from <m>S</m> to <m>T</m>, the sets <m>S</m> and <m>T</m> play a big role in determining whether a function is one-to-one or onto (as defined in <xref ref="formalrelations">Problem</xref>).
+        For the remainder of this problem, let <m>S</m> and <m>T</m> stand for  the set of nonnegative real numbers.
+      </p>
+    </introduction>
+      <task>
+        <statement>
+          <p>
+            If <m>f:S\rightarrow T</m> is given by <m>f(x) =x^2</m>, is <m>f</m>
+            one-to-one? Is <m>f</m> onto?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            With <m>S</m> as domain and <m>T</m> as codomain, <m>f</m> is both one-to-one and onto.
+          </p>
+        </solution>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Now assume <m>S'</m> is the set of all real
+            numbers and <m>g:S'\rightarrow T</m> is given by <m>g(x) = x^2</m>. Is <m>g</m>
+            one-to-one? Is <m>g</m> onto?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The function <m>g</m> is not one-to-one, but it is onto.
+          </p>
+        </solution>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Assume that <m>T'</m> is the set of all
+            real numbers and <m>h:S\rightarrow T'</m> is given by <m>h(x) = x^2</m>. Is
+            <m>h</m> one-to-one? Is <m>h</m> onto?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The function <m>h</m> is one-to-one but not onto.
+          </p>
+        </solution>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            And if the function
+            <m>j:S'\rightarrow T'</m> is given by <m>j(x)=x^2</m>, is <m>j</m> one-to-one?
+            Is <m>j</m> onto?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The function <m>j</m> is neither one-to-one nor onto.
+          </p>
+        </solution>
+      </task>
+    </activity>
+
+
+
+      <activity>
+        <statement>
+          <p>
+            If <m>f:S\rightarrow T</m> is a function, we say that <m>f</m> <term>maps</term>
+            <m>x</m> to <m>y</m> as another way to say that <m>f(x)=y</m>. Suppose
+            <m>S=T=\{1,2,3\}</m>. Give a function from
+            <m>S</m> to
+            <m>T</m> that is not onto. Notice that two different members of <m>S</m>
+            have mapped to the same element of <m>T</m>. Thus when we say that <m>f</m>
+            associates one and only one element of <m>T</m> to each element of <m>S</m>,
+            it is quite possible that the one and only one element <m>f(1)</m> that
+            <m>f</m> maps 1 to is exactly the same as the one and only one element
+            <m>f(2)</m> that <m>f</m> maps 2 to.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The function given by <m>f(x)=1</m> for all <m>x</m> in <m>S</m> is
+            not onto.
+          </p>
+        </solution>
+      </activity>
+
+   <!-- Note:  End copy/paste of Appendix on Functions/Relations -->
 
     <activity xml:id="countingfunctions" category="essential">
-        <introduction>
+        <!-- <introduction>
             <p>
         The idea of a function is ubiquitous in mathematics. A
         function<idx><h>function</h></idx> <m>f</m> from a set <m>S</m> to a set <m>T</m> is a relationship
@@ -206,13 +525,14 @@
         from different points of view from time to time. However, the quick review
         above should probably let you answer these questions. If you have difficulty
         with them, it would be a good idea to go now to <xref ref="Relations">Appendix</xref> and
-        work through <xref ref="relationsandfunctions">Section</xref> which covers this definition
-        in more detail. You might also want to study <xref ref="digraphsoffunctions" text="global">Section</xref> to learn
+        work through <xref ref="relationsandfunctions"/> which covers this definition
+        in more detail. You might also want to study <xref ref="digraphsoffunctions" text="title"/> to learn
         to visualize the properties of functions. We will take up the topic of
         this section later in this chapter as well, but in less detail than is
         in the appendix.
             </p>
         </introduction>
+      -->
       <task xml:id="countingfunctionsparta" >
           <statement>
               <p>
@@ -416,7 +736,7 @@
         </p>
       </solution>
     </activity>
-</introduction>
+  </subsection>
 
 
   <subsection>
@@ -2374,7 +2694,9 @@ many ways can you pair up the next person who isn't already paired up?
       but thinking about it as a principle in its own right often leads us to find
       solutions to problems. Notice that it does not always give us a formula for
       the number of blocks of a partition; it only works when all the blocks have
-      the same size. In <xref ref="groupsonsets">Chapter</xref>, we develop a way to solve problems
+      the same size. 
+      <!-- In <xref ref="groupsonsets">Chapter</xref>, we develop a way -->
+      It is possible to solve problems
       with different block sizes in cases where there is a good deal of
       symmetry in the problem. (The roundness of the table was a symmetry in
       the problem of people at a table; the fact that we can order the sets
@@ -2493,8 +2815,8 @@ many ways can you pair up the next person who isn't already paired up?
     <activity xml:id="twocolorsofbeads" category="essential">
       <statement>
         <p>
-          (This becomes especially relevant in
-          <xref ref="groupsonsets" />, though it makes an important point here.) In how many ways may we attach two identical red beads
+          <!-- (This becomes especially relevant in
+          <xref ref="groupsonsets" />, though it makes an important point here.)--> In how many ways may we attach two identical red beads
           and two identical blue beads to the corners of a square (with one bead
           per corner) free
           to move around in (three-dimensional) space?

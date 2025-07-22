@@ -4,6 +4,9 @@
   <title>Relations as sets of Ordered Pairs</title>
   <subsection xml:id="functionrelation">
     <title>The relation of a function</title>
+
+    <!-- Begin material copied/pasted into s1-2 -->
+    <!--
     <activity xml:id="functionsasorderedpairs">
       <statement>
         <p>
@@ -255,7 +258,9 @@
             not onto.
           </p>
         </solution>
-      </activity>
+      </activity> 
+    -->
+    <!-- End material copied/pasted into s1-2 -->  
   </subsection>
 
 
@@ -346,8 +351,8 @@
       <activity xml:id="initialdigraph">
         <statement>
           <p>
-            Draw the digraph of the relation from the set \{A, M, P,
-            S\} to the set \{Sam, Mary, Pat, Ann, Polly, Sarah\} given by
+            Draw the digraph of the relation from the set {A, M, P,
+            S} to the set {Sam, Mary, Pat, Ann, Polly, Sarah} given by
             <q>is the first letter of.</q>
           </p>
         </statement>
@@ -361,8 +366,8 @@
       <activity xml:id="initialdigraph2">
         <statement>
           <p>
-            Draw the digraph of the relation from the set \{Sam, Mary, Pat, Ann, Polly, Sarah\} to the set \{A, M, P,
-            S\} given by
+            Draw the digraph of the relation from the set {Sam, Mary, Pat, Ann, Polly, Sarah} to the set {A, M, P,
+            S} given by
             <q>has as its first letter.</q>
           </p>
         </statement>
@@ -376,7 +381,7 @@
       <activity>
         <statement>
           <p>
-            Draw the digraph of the relation on the set \{Sam, Mary, Pat, Ann, Polly, Sarah\} given by
+            Draw the digraph of the relation on the set {Sam, Mary, Pat, Ann, Polly, Sarah} given by
             <q>has the same first letter as.</q>
           </p>
         </statement>
